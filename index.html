@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio-Age Test / 体内年齢セルフ検査</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.0.0/dist/tabler-icons.min.css" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+
+      :root {
+        --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        --color-text-primary:        #111827;
+        --color-text-secondary:      #6B7280;
+        --color-text-tertiary:       #9CA3AF;
+        --color-background-primary:  #FFFFFF;
+        --color-background-secondary:#F9FAFB;
+        --color-background-tertiary: #F3F4F6;
+        --color-border-secondary:    #D1D5DB;
+        --color-border-tertiary:     #E5E7EB;
+        --border-radius-md:          8px;
+        --border-radius-lg:          14px;
+      }
+
+      body {
+        margin: 0;
+        padding: 24px 16px 60px;
+        font-family: var(--font-sans);
+        background: #F3F4F6;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button { opacity: 1; }
+
+      input[type=range] { cursor: pointer; }
+
+      button { font-family: var(--font-sans); transition: opacity 0.15s; }
+      button:hover:not(:disabled) { opacity: 0.85; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
